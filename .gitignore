@@ -2,3 +2,7 @@ venv
 *.sqlite3
 .env
 .vscode
+
+__pycache__/
+*.pyo
+*.pyc
