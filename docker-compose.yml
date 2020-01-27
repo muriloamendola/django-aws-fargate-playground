@@ -1,0 +1,9 @@
+version: '3'
+services:
+  drf:
+    build: .
+    image: django-aws-fargate-playground
+    ports:
+    - "8800:8800"
+    volumes:
+    - .:/app
