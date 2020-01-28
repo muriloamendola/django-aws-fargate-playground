@@ -12,9 +12,9 @@ COPY core ./core
 COPY requirements-dev.txt .
 COPY requirements.txt .
 COPY manage.py .
+COPY start.sh .
 
 RUN apk update && apk add postgresql-dev gcc musl-dev
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python", "manage.py"]
-CMD ["runserver", "0.0.0.0:8800"]
+ENTRYPOINT ./start.sh
