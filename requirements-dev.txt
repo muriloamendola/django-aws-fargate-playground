@@ -9,5 +9,5 @@ mccabe==0.6.1
 pylint==2.4.4
 pytz==2019.3
 six==1.14.0
-sqlparse==0.3.0
+sqlparse==0.4.4
 wrapt==1.11.2
